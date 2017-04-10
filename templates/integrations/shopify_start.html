@@ -1,0 +1,10 @@
+<html>
+    <h1>Start Shopify OAuth</h1>
+    <form method="post" action=".">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <p>Enter the store name part of <em>store_name</em>.myshopify.com</p>
+
+        <button type="submit">Go to Shopify</button>
+    </form>
+</html>
